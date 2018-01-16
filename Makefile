@@ -6,7 +6,7 @@ SRC = pgconfjdbc.c
 
 OBJ = $(SRC:.c=.o)
 
-LIBS = -lpq
+LIBS = -Bstatic -lpq -Bdynamic
 
 MAIN = pgconfjdbc
 
