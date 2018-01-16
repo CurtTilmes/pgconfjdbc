@@ -1,8 +1,9 @@
 pgconfjdbc
 ----------
 
-Connect to a PostgreSQL using libpq style connection information, them output
-command line options suitable for java JDBC postgresql connections.
+Connect to a PostgreSQL using libpq style connection information, then
+output command line options suitable for java JDBC postgresql
+connections.
 
 ```
 ./pgconfjdbc service=mine
