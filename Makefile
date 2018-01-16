@@ -1,10 +1,12 @@
 CC = gcc
 
-CFLAGS = -Wall
-
 SRC = pgconfjdbc.c
 
 OBJ = $(SRC:.c=.o)
+
+INCDIR = $(shell pg_config --includedir)
+
+CFLAGS = -Wall -I $(INCDIR)
 
 LIBS = -Bstatic -lpq -Bdynamic
 
